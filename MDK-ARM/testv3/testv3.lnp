@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"testv3\startup_stm32f401xc.o"
+"testv3\main.o"
+"testv3\gpio.o"
+"testv3\usart.o"
+"testv3\stm32f4xx_it.o"
+"testv3\stm32f4xx_hal_msp.o"
+"testv3\stm32f4xx_hal_tim.o"
+"testv3\stm32f4xx_hal_tim_ex.o"
+"testv3\stm32f4xx_hal_uart.o"
+"testv3\stm32f4xx_hal_rcc.o"
+"testv3\stm32f4xx_hal_rcc_ex.o"
+"testv3\stm32f4xx_hal_flash.o"
+"testv3\stm32f4xx_hal_flash_ex.o"
+"testv3\stm32f4xx_hal_flash_ramfunc.o"
+"testv3\stm32f4xx_hal_gpio.o"
+"testv3\stm32f4xx_hal_dma_ex.o"
+"testv3\stm32f4xx_hal_dma.o"
+"testv3\stm32f4xx_hal_pwr.o"
+"testv3\stm32f4xx_hal_pwr_ex.o"
+"testv3\stm32f4xx_hal_cortex.o"
+"testv3\stm32f4xx_hal.o"
+"testv3\stm32f4xx_hal_exti.o"
+"testv3\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "testv3\testv3.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "testv3.map" -o testv3\testv3.axf
